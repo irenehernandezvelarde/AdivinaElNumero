@@ -19,19 +19,6 @@ public class Ranking extends AppCompatActivity {
 
         final Button juego = findViewById(R.id.juegoButton);
         rankingValues = getIntent().getStringArrayListExtra("valores");
-        String filasNombres = "";
-        String filasPuntuaciones = "";
-
-        for (int i = 0; i < rankingValues.size(); i+= 2){
-            filasNombres = filasNombres + rankingValues.get(i) + "\n";
-            filasPuntuaciones = filasPuntuaciones + rankingValues.get(i+1) + "\n";
-
-        }
-        TextView nombres = findViewById(R.id.nombres);
-        TextView puntuacion = findViewById(R.id.puntuacion);
-
-        nombres.setText(filasNombres);
-        puntuacion.setText(filasPuntuaciones);
 
         juego.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
