@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Ranking extends AppCompatActivity {
     ArrayList<String> rankingValues = new ArrayList<>();
@@ -19,6 +20,7 @@ public class Ranking extends AppCompatActivity {
 
         final Button juego = findViewById(R.id.juegoButton);
         rankingValues = getIntent().getStringArrayListExtra("valores");
+
 
         juego.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
