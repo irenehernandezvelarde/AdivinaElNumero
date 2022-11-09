@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private int contador = 0;
     private ArrayList<String> rankingValues = new ArrayList<>();
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
